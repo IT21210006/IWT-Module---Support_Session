@@ -2,12 +2,12 @@ CREATE DATABASE bookshop;
 USE bookshop;
 
 CREATE TABLE sales(
-bookid VARCHAR(4),
+bookid VARCHAR(4) not null,
 bookName VARCHAR(30),
 bookPrice FLOAT,
 bookQtySold INT,
 bookMonthSold VARCHAR(20),
-CONSTRAINT PRIMARY KEY(bookid)
+PRIMARY KEY(bookid)
 );
 
 INSERT INTO sales VALUES("2005","Advance CSS",400,10,"May"),
